@@ -6,7 +6,7 @@ import './App.css';
 
 function getUpdateDate(date) {
   let result;
-  let curDate = '2018-03-03T12:46:00+03:00';     //   Date.now() or '2018-03-03T12:46:00+03:00'
+  let curDate = '2019-03-03T12:46:00+03:00';     //   Date.now() or '2019-03-03T12:46:00+03:00'
   const timeDifference = moment(curDate) - moment(date);
 
   if (timeDifference >= 86400000) result = `${Math.floor(timeDifference / 86400000)} дней назад`;
